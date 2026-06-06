@@ -1,0 +1,8 @@
+ 
+ - pierwsze co się rzuca w oczy to że w logu zamiasta godziny jest słowo start, dziwne, może trzeba to sprecyzować o jaką godzinę chodzi, to wejdzie jako poprawka
+ - druga rzecz którą zauważyłem to że w trybach brakowało 3 a kolejność była 2,1,4
+ - wybrałem tryb 1 czyli automatyczne,
+ - pytania były zadawane po kolei ale odpowiedzi były generowane przez LLM czyli coś w stylu wybierz odpowiedz z pośród dostępnych albo napisz swoją - tu muszę się zastanowić czy tak ma to wyglądać, drugie uruchomineie sprawdzi czy będzie ten sam zestaw
+- do loga musi być wpisany cała odpowiedz użytkownika jeżeli ją podał, chociaż te zdanie które podałem jest na początku jako cel analizy, więc może zostać, trzeb sprawdzić przy kolejnym podejściu
+- jest określony procentowo rozkład pokrycia materiałami na daną fazę ES,
+- są rozpoznane zdarzenia i konteksty
