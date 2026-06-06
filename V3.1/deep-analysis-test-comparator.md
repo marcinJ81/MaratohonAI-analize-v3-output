@@ -35,7 +35,7 @@ Każdy katalog `test-N` zawiera pliki wygenerowane przez orkiestrator w trakcie 
 test-N/
   state/
     session.md              ← stan sesji: fazy, tryb, decyzje, historia handoffów
-    session-log.md          ← log akcji orkiestratora (data, godzina, akcja)
+    orchestrator-log.md          ← log akcji orkiestratora (data, godzina, akcja)
     phase-1-output.md       ← wynik Big Picture (jeśli wygenerowany)
     phase-2-output.md       ← wynik Process Level (jeśli wygenerowany)
     phase-3-output.md       ← wynik Design Level (jeśli wygenerowany)
@@ -63,7 +63,7 @@ Dla każdego katalogu `test-N` odczytaj:
 | Plik | Co wyciągasz |
 |---|---|
 | `state/session.md` | tryb pracy, złożoność systemu, cel, lista faz ze statusami, decyzje użytkownika, historia handoffów |
-| `state/session-log.md` | sekwencja akcji z timestampami |
+| `state/orchestrator-log.md` | sekwencja akcji z timestampami |
 | `state/phase-1-output.md` | czy istnieje, status (completed/partial), liczba wniosków, liczba otwartych pytań |
 | `state/phase-2-output.md` | j.w. |
 | `state/phase-3-output.md` | j.w. |
@@ -234,7 +234,7 @@ Podobieństwo ogólne: **wysokie / średnie / niskie**
 | Plik | test-1 | test-2 | test-N |
 |---|---|---|---|
 | state/session.md | ✓ / ✗ | | |
-| state/session-log.md | ✓ / ✗ | | |
+| state/orchestrator-log.md | ✓ / ✗ | | |
 | state/phase-1-output.md | ✓ / ✗ | | |
 | state/phase-2-output.md | ✓ / ✗ | | |
 | state/phase-3-output.md | ✓ / ✗ | | |
@@ -274,7 +274,7 @@ Tylko fakty z logów i plików — bez oceny merytorycznej domeny.]
 
 - Nie oceniaj treści merytorycznej wniosków — tylko strukturę i przebieg.
 - Nie czytaj plików diagramów (`.mermaid`, `.svg`, `.png`) — odnotuj tylko ich istnienie.
-- Jeśli `session-log.md` nie istnieje w danym teście — oznacz cały test jako `log: MISSING`
+- Jeśli `orchestrator-log.md` nie istnieje w danym teście — oznacz cały test jako `log: MISSING`
   i zaznacz w raporcie że ocena sekwencji kroków jest niepełna.
 - Porównuj każdy nowy test ze wszystkimi poprzednimi — nie tylko z ostatnim.
 - Nadpisuj `comparison-report.md` przy każdym uruchomieniu.
